@@ -162,7 +162,7 @@ You can write text across multiple lines.''';
   // Removing whitespace from beginning and end of string
   // Also available: trimLeft() and trimRight() for specific sides
   print('\nString Trimming Example:');
-  String trimmed = '   Extra spaces                    '.trim();
+  String trimmed = '   Extra spaces                    '.trimLeft();
   print('Trimmed String: "$trimmed"');
 
   // Extracting a portion of string using start and end indices
@@ -213,7 +213,7 @@ You can write text across multiple lines.''';
   print('Parsed Number: $number');
 
   String floatString = '45.67';
-  double floatNumber = double.parse(floatString); // Converts string to double
+  double? floatNumber = double.tryParse(floatString); // Converts string to double
   print('Parsed Float Number: $floatNumber');
 
   // Converting numbers back to formatted strings
