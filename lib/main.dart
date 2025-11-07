@@ -3,8 +3,9 @@
 /// var, final, and const - each with different mutability and initialization rules
 void main() {
   // VARIABLE DECLARATION KEYWORDS
-
-
+  // var - type is automatically inferred from the assigned value
+  // - Can be reassigned to values of the same type
+  // - Cannot change type after first assignment (type-safe)
   // - Use when you need a mutable variable with automatic type inference
   var age = 30;
   age = 31; // valid - same type (int)
